@@ -8,7 +8,7 @@ class BaseRobot:
         self.name = name
         self.weight = weight
         if coords is None:
-            self.coords = coords if coords is not None else [0, 0]
+            self.coords = coords or [0, 0]
         else:
             self.coords = coords
 
